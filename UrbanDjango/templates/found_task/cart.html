@@ -1,0 +1,40 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Trash</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Извините, Ваша корзина пуста</h1>-->
+<!--    <button id="myButton">Вернуться обратно</button>-->
+<!--    <script>-->
+<!--        document.getElementById('myButton').onclick = function () {-->
+<!--            window.location.href = 'http://127.0.0.1:8000'-->
+<!--        }-->
+<!--    </script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+{% extends "menu.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>  </title>
+</head>
+<body>
+    {% block page_name %}
+        {{block.super}}
+    {% endblock %}
+
+    {% block menu %}
+        {{block.super}}
+    {% endblock %}
+
+    {% block content %}
+        <h2 align="center">{{ text }}</h2>
+        <a href="http://127.0.0.1:8000"> <h2><button> Вернуться обратно </button></h2> </a>
+    {% endblock %}
+</body>
+</html>
