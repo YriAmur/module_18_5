@@ -35,6 +35,6 @@ urlpatterns = [
 #     path('games/', games),
 #     path('cart/', cart),
     path('admin/', admin.site.urls),
-    path('', sign_up_by_html),
-    path('django_sign_up/', sign_up_by_django)
+    path('html/', sign_up_by_html),
+    path('django/', sign_up_by_django)
 ]
